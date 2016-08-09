@@ -31,6 +31,7 @@ function validar(formulario){
 <div data-role="page" id="pagePedidosMesa">
   <div data-role="header">
     <h1>Ingresar Pedido</h1>
+    <p>&nbsp;<a href="index2.html" data-role="button" data-icon="home"></a></p>
   </div>
   <div data-role="content">
     <p>
@@ -87,7 +88,7 @@ function validar(formulario){
           
           </p>
           &nbsp;
-          <input type="submit" id="Submit" name="btn1" value="Agregar" />
+          <input name="btn1" type="submit" id="Submit" formmethod="POST" value="Agregar" />
           <p>&nbsp;</p>
         </div>
       </div>
@@ -102,7 +103,7 @@ function validar(formulario){
           </select>
         </p>
         </p>
-        Agregados:
+Agregados:
         <p>
           <label>
             <input type="radio" name="agregadochorrillanas" value="opción" id="agregadochorrillanas_0">
@@ -112,29 +113,71 @@ function validar(formulario){
             <input type="radio" name="agregadochorrillanas" value="opción" id="agregadochorrillanas_1">
             Opción</label>
         </p>
-        <p>&nbsp;</p>
         <p>&nbsp;
-          <input type="submit" id="Submit" name="btn" value="Enviar" />
+          <input type="submit" id="Submit" name="btn" value="Agregar" />
         </p>
       </div>
       <div data-role="collapsible" data-collapsed="true">
         <h3>Extras</h3>
-        <p>Contenido</p>
+        <p>
+          <label for="selectmenu4" class="select">Menú Extra:</label>
+          <select name="selectmenu4" id="selectmenu4">
+            <option value="option1">Opción 1</option>
+            <option value="option2">Opción 2</option>
+            <option value="option3">Opción 3</option>
+          </select></p><input type="submit" id="Submit" name="btn2" value="Agregar" />
       </div>
     </div>
 </p>
   <div data-role="collapsible-set">
     <div data-role="collapsible">
       <h3>Ensaladas</h3>
-      <p>Contenido</p>
+      <p>
+        <label for="selectmenu5" class="select">Tipo de Ensalada:</label>
+        <select name="selectmenu5" id="selectmenu5">
+          <option value="option1">Opción 1</option>
+          <option value="option2">Opción 2</option>
+          <option value="option3">Opción 3</option>
+        </select>
+      <p>
+        <label for="textinput3">Comentarios:</label>
+        <input type="text" name="textinput3" id="textinput3" value=""  />
+      
+      <p><input type="submit" id="Submit" name="btn3" value="Agregar" /></p>
+      </p>
+</p>
     </div>
     <div data-role="collapsible" data-collapsed="true">
       <h3>Bebidas y Licores</h3>
-      <p>Contenido</p>
+      <p>
+        <label for="selectmenu6" class="select">Jugos:</label>
+        <select name="selectmenu6" id="selectmenu6">
+          <option value="option1">Opción 1</option>
+          <option value="option2">Opción 2</option>
+          <option value="option3">Opción 3</option>
+        </select>
+      <p>
+        <label for="selectmenu7" class="select">Licores:</label>
+        <select name="selectmenu7" id="selectmenu7">
+          <option value="option1">Opción 1</option>
+          <option value="option2">Opción 2</option>
+          <option value="option3">Opción 3</option>
+        </select>
+      <p><input type="submit" id="Submit" name="btn4" value="Agregar" />
+</p>
     </div>
     <div data-role="collapsible" data-collapsed="true">
       <h3>Vinos</h3>
-      <p>Contenido</p>
+      <p>
+        <label for="selectmenu8" class="select">Variedad:</label>
+        <select name="selectmenu8" id="selectmenu8">
+          <option value="option1">Opción 1</option>
+          <option value="option2">Opción 2</option>
+          <option value="option3">Opción 3</option>
+        </select>
+      
+      <p><input type="submit" id="Submit" name="btn5" value="Agregar" /></p>
+      </p>
     </div>
   </div>
   </div>
